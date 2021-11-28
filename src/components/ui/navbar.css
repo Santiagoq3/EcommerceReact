@@ -1,0 +1,38 @@
+.header{
+    padding: 0.5em;
+    border: 1px solid gray;
+    background-color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__h1{
+    font-size: 1.2rem;
+    margin-left: 0.5em;
+}
+
+.nav__ul{
+    flex: 0.7;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.nav__ul li{
+    cursor: pointer;
+}
+.nav__icons{
+    flex: 0.1;
+    display: flex;
+    gap: 1em;
+    margin-right: 0.4em;
+}
+
+.fa-search,.fa-shopping-cart{
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.item{
+}
+
+.item__container-img{
+    position: relative;
+}
+
+.item__btn-quick-view{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    width: 90%;
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    padding: 0.5em;
+    font-weight: 700;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.item img{
+    max-width: 250px;
+    border-radius: 5px ;
+}
+
+.item__card{
+    padding: 0.5em;
+}
+
+.item__card__product-title{
+    font-weight: 400;
+}
+
+.item__card__product-price{
+    margin-top: 0.4em;
+    font-weight: 600;
+}
+

@@ -1,0 +1,9 @@
+.ItemListContainer{
+    padding: 1em;
+   margin-top: 1em;
+}
+
+.ItemListContainer__greeting{
+    font-size: 2rem;
+    
+}

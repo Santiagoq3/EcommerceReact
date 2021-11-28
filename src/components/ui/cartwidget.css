@@ -1,0 +1,8 @@
+.cartWidget{
+    display: flex;
+    align-items: center;
+}
+
+.cartwidget__menu{
+    cursor: pointer;
+}

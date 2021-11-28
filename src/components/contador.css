@@ -1,0 +1,33 @@
+.contador{
+    margin-top: 1em;
+
+}
+
+.contador__display{
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #a451a1;
+    color: #fff;
+   
+}
+
+.contador__button{
+    margin-top: 1em;
+    background-color: #234dbb;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 150px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.fa-minus,.fa-plus{
+    cursor: pointer;
+}

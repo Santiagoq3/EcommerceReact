@@ -1,0 +1,44 @@
+.itemquickview{
+
+    position: fixed;
+    max-width: 700px;
+    width: 90%;
+    height: 500px;
+    background-color: #fff;
+    border: 0.5px solid rgb(226, 222, 222);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.fa-times{
+    position: relative;
+    right: -95%;
+    transform: translate(-95%);
+}
+
+.itemquickview__body img{
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.itemquickview__body{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.itemquickview__body__product-info{
+    padding: 1em;
+
+}
+
+.itemquickview__body__product-info__sizes{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
