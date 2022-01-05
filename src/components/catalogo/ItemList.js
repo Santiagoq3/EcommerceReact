@@ -1,9 +1,9 @@
 import React from 'react'
 import { Item } from './Item'
 import "./itemlist.css"
-import { ItemQuickView } from './ItemQuickView'
-export const ItemList = () => {
+export const ItemList = ({Productos}) => {
 
+    console.log("aki", Productos)
     const picture= "assets/images/image-product-1.jpg"
     const productos = [
         {
@@ -41,7 +41,7 @@ export const ItemList = () => {
         <div className="itemlist">
 
             {
-                productos.map(producto => {
+                Productos.map(producto => {
                     return <Item producto={producto} />
                 })
             }

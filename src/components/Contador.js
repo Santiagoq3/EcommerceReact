@@ -5,6 +5,8 @@ export const Contador = () => {
     const [Contador, setContador] = useState(1)
 
 
+
+    
     const handleAdd = ()=>{
 
         setContador(Contador + 1)
