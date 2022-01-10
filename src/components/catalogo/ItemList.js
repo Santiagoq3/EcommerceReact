@@ -3,7 +3,7 @@ import { Item } from './Item'
 import "./itemlist.css"
 export const ItemList = ({Productos}) => {
 
-    console.log("aki", Productos)
+    const {data,loading} = Productos;
     const picture= "assets/images/image-product-1.jpg"
     const productos = [
         {
@@ -41,9 +41,16 @@ export const ItemList = ({Productos}) => {
         <div className="itemlist">
 
             {
-                Productos.map(producto => {
-                    return <Item producto={producto} />
-                })
+                loading ? <p>cargando...</p>
+
+                :
+
+
+                
+                data.map(producto => {
+                        return <Item producto={producto} />
+                    })
+                
             }
             
         </div>

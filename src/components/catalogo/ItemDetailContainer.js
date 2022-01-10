@@ -29,10 +29,8 @@ export const ItemDetailContainer = ({item}) => {
             loading: false
         })
     }
-    console.log(Productos)
     return (
         <div>
-            <h1>ItemDetailContainer</h1>
             <ItemDetail Productos={Productos} />
         </div>
     )

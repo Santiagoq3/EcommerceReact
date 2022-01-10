@@ -8,9 +8,10 @@ const Navbar = () => {
             <nav className="nav">
                 <Cartwidget />
                 <ul className="nav__ul">
-                    <li>Women</li>
-                    <li>Men</li>
-                    <li>Kids</li>
+                    <Link to={`/category/:6154940c188b3540f08af666`}>Women</Link>
+                    <Link to={`/category/:618d6572b719ea641a15404b`}>Men</Link>
+                    <Link to={`/category/:615496897d02077de089f87a`}>Kids</Link>
+                    
                 </ul>
                 <div className="nav__icons">
                     <i className="fas fa-search"></i>

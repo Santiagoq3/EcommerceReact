@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import "./itemdetail.css"
-
+import picture from "./image-product-1.jpg"
+import { Contador } from '../Contador'
 export const ItemDetail = ({Productos}) => {
 
     const [loader, setloader] = useState(true)
     const {data,loading} = Productos;
     const {producto} =data
-    console.log("xdxd", data, loading)
-    
     
     return (
         <div className="itemdetail">
-            <img  />
 
+            <div className="itemdetail__container-img">
+
+                <img src={picture}  />
+
+
+
+            </div>
             
                 {loading ? <p>cargando...</p>
 
@@ -23,16 +28,16 @@ export const ItemDetail = ({Productos}) => {
                 <div className="itemdetail__detail">
 
                     <div className="itemdetail__detail-top">
-                        <h1>{producto.nombre}</h1>
-                        <p>{producto.precio}</p>
+                        <h2>{producto.nombre}</h2>
+                        <p>{producto.precio}$</p>
                     </div>
                     <div className="itemdetail__detail-middle">
-                        
+                        <Contador />
                     </div>
                     <div className="itemdetail__detail-bottom">
-                        <h2>{producto.descripcion}</h2>
+                        <h2>Descripcion</h2>
                         <p>
-                            
+                        {producto.descripcion}
                         </p>
                     </div>
 
