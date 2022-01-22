@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import "./contador.css"
 
-export const Contador = () => {
+export const Contador = ({onAdd}) => {
     const [Contador, setContador] = useState(1)
 
 
@@ -30,9 +31,11 @@ export const Contador = () => {
                 </p>
                 <i onClick={handleAdd} className="fas fa-plus"></i>
             </div> 
-            <button className="contador__button">
-                Agregar al carrito
+            
+            <button onClick={()=>onAdd(Contador)}>
+                    Agregar al carrito
             </button>
+            
         </div>
     )
 }

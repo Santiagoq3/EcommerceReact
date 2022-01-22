@@ -1,12 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./itemdetail.css"
 import picture from "./image-product-1.jpg"
 import { Contador } from '../Contador'
+import { cartContext } from '../../context/CartContext'
 export const ItemDetail = ({Productos}) => {
+
 
     const [loader, setloader] = useState(true)
     const {data,loading} = Productos;
-    const {producto} =data
+    const {producto} =data;
+    const {addItem,Cart} = useContext(cartContext)
+    
+    const onAdd = (contador)=>{
+        const {data,loading} = Productos;
+        const {producto} =data;
+
+
+        addItem(producto,contador)
+    }
+
+    console.log(Cart)
+
+
+
     
     return (
         <div className="itemdetail">
@@ -32,7 +48,7 @@ export const ItemDetail = ({Productos}) => {
                         <p>{producto.precio}$</p>
                     </div>
                     <div className="itemdetail__detail-middle">
-                        <Contador />
+                        <Contador onAdd={onAdd}/>
                     </div>
                     <div className="itemdetail__detail-bottom">
                         <h2>Descripcion</h2>

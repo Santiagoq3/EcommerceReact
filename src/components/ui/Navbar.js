@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { cartContext } from '../../context/CartContext'
 import { Cartwidget } from './Cartwidget'
 import "./navbar.css"
 const Navbar = () => {
+
+    const {Cart} = useContext(cartContext);
     return (
         <header className="header">
             <nav className="nav">
@@ -15,7 +18,10 @@ const Navbar = () => {
                 </ul>
                 <div className="nav__icons">
                     <i className="fas fa-search"></i>
-                    <i className="fas fa-shopping-cart"></i>
+                    <i className="fas fa-shopping-cart">
+                        <span>({Cart.length})</span>
+                    </i>
+                    <i class="fas fa-sign-out-alt"></i>
                 </div>
             </nav> 
         </header>
