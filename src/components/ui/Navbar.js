@@ -18,9 +18,13 @@ const Navbar = () => {
                 </ul>
                 <div className="nav__icons">
                     <i className="fas fa-search"></i>
-                    <i className="fas fa-shopping-cart">
-                        <span>({Cart.length})</span>
-                    </i>
+                    <Link to="/cart">
+
+                        <i className="fas fa-shopping-cart">
+                            <span>({Cart.length})</span>
+                        </i>
+
+                    </Link>
                     <i class="fas fa-sign-out-alt"></i>
                 </div>
             </nav> 

@@ -9,7 +9,7 @@ export const ItemDetail = ({Productos}) => {
     const [loader, setloader] = useState(true)
     const {data,loading} = Productos;
     const {producto} =data;
-    const {addItem,Cart} = useContext(cartContext)
+    const {addItem,Cart,yaexiste} = useContext(cartContext)
     
     const onAdd = (contador)=>{
         const {data,loading} = Productos;
@@ -19,11 +19,8 @@ export const ItemDetail = ({Productos}) => {
         addItem(producto,contador)
     }
 
-    console.log(Cart)
 
 
-
-    
     return (
         <div className="itemdetail">
 
@@ -56,7 +53,7 @@ export const ItemDetail = ({Productos}) => {
                         {producto.descripcion}
                         </p>
                     </div>
-
+                    {yaexiste && <p>El producto ya existe en el carrito</p>}
                 </div> 
             }
                 
