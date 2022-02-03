@@ -23,8 +23,10 @@
 }
 
 .item img{
-    max-width: 250px;
+    width: 250px;
+    height: 250px;
     border-radius: 5px ;
+    border: 1px solid red;
 }
 
 .item__card{

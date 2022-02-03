@@ -4,8 +4,8 @@ import "./item.css"
 import { ItemQuickView } from './ItemQuickView'
 
 export const Item = ({producto}) => {
-
-    const {_id,precio,} = producto
+    console.log(producto)
+    const {nombre,precio,img} = producto
     const [handleQuickView, sethandleQuickView] = useState(false)
 
     const handleQuickViewTrue = ()=>{
@@ -16,14 +16,14 @@ export const Item = ({producto}) => {
         <div className="item" onMouseOver={()=> setoverItem("")} onMouseOut={()=> setoverItem("none")}>
             <div className="item__container-img">
 
-             <img src="assets/images/image-product-1.jpg"  />
+             <img src={img} className='item_img'  />
 
             
              
             </div>
-            <Link to={`/item/${_id}`} className="item__card">
-                <p className="item__card__product-title">{_id}</p>
-                <p className="item__card__product-price">{precio}</p>
+            <Link to={`/item/${nombre}`} className="item__card">
+                <p className="item__card__product-title">{nombre}</p>
+                <p className="item__card__product-price">$ {precio}</p>
             </Link>
            
         </div>

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { firestore } from '../../firebase.config'
 import { fetchHelper } from '../../helpers/fetch.Helper'
 import { Contador } from '../Contador'
 import { ItemList } from './ItemList'
 import "./ItemListContainer.css"
-
+import { collection , getDocs , query , where } from "firebase/firestore"
 export const ItemListContainer = ({greeting}) => {
 
     const [Productos, setProductos] = useState({
@@ -30,31 +31,30 @@ export const ItemListContainer = ({greeting}) => {
     const llamadaApi = async(id,idOG)=>{
         // fetch(`https://restserversq.herokuapp.com/api/buscar/productos/${id}`, {mode: "no-cors"})
         if (id) {
-            fetch(`https://restserversq.herokuapp.com/api/buscar/productos/${idOG}`)
-            .then((res)=> res.json())
-            .then(({productos})=> {
-               console.log("ahora", productos)
-                setProductos({
-                    data: productos,
-                    loading: false
-                })
-            })
+           
+           const q = query(collection(firestore,"items"),where("categoria", "==", id))
+           const resp = getDocs(q)
+            resp
+            .then((data) => setProductos({
+                data: data.docs.map(d => d.data()),
+                loading: false
+            }))
             .catch((err)=> console.log(err))
-
+            
         }else{
 
-            fetch('https://restserversq.herokuapp.com/api/productos')
-            .then((res)=> res.json())
-            .then(({productos})=> {
-               
-                setProductos({
-                    data: productos,
-                    loading: false
-                })
-            })
-            .catch((err)=> console.log(err))
+            const q = query(collection(firestore,"items"))
+            const resp = getDocs(q)
+             resp
+             .then((data) => setProductos({
+                 data: data.docs.map(d => d.data()),
+                 loading: false
+             }))
+             .catch((err)=> console.log(err))
         }
     }
+
+    console.log(Productos)
 
     return (
         <div className="ItemListContainer">
