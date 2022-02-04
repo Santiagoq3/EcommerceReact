@@ -4,39 +4,7 @@ import "./itemlist.css"
 export const ItemList = ({Productos}) => {
 
     const {data,loading} = Productos;
-//     const picture= "assets/images/image-product-1.jpg"
-//     const productos = [
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-//         {
-//             title: "Zapatillas nike" ,
-//             price: "58$",
-//             pictureUr: picture
-//         },
-// ]
+
     return (
         <div className="itemlist">
 
@@ -45,8 +13,6 @@ export const ItemList = ({Productos}) => {
 
                 :
 
-
-                
                 data.map(producto => {
                         return <Item producto={producto} />
                     })

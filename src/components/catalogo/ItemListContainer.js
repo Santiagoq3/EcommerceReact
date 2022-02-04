@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { firestore } from '../../firebase.config'
+import { collection , getDocs , query , where } from "firebase/firestore"
 import { fetchHelper } from '../../helpers/fetch.Helper'
 import { Contador } from '../Contador'
 import { ItemList } from './ItemList'
 import "./ItemListContainer.css"
-import { collection , getDocs , query , where } from "firebase/firestore"
 export const ItemListContainer = ({greeting}) => {
 
     const [Productos, setProductos] = useState({
@@ -53,8 +53,6 @@ export const ItemListContainer = ({greeting}) => {
              .catch((err)=> console.log(err))
         }
     }
-
-    console.log(Productos)
 
     return (
         <div className="ItemListContainer">

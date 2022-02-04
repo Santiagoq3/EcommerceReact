@@ -4,8 +4,7 @@ import "./item.css"
 import { ItemQuickView } from './ItemQuickView'
 
 export const Item = ({producto}) => {
-    console.log(producto)
-    const {nombre,precio,img} = producto
+    const {nombre,precio,img,id} = producto
     const [handleQuickView, sethandleQuickView] = useState(false)
 
     const handleQuickViewTrue = ()=>{
@@ -21,7 +20,7 @@ export const Item = ({producto}) => {
             
              
             </div>
-            <Link to={`/item/${nombre}`} className="item__card">
+            <Link to={`/item/${id}`} className="item__card">
                 <p className="item__card__product-title">{nombre}</p>
                 <p className="item__card__product-price">$ {precio}</p>
             </Link>

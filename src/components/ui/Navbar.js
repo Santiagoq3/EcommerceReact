@@ -11,9 +11,9 @@ const Navbar = () => {
             <nav className="nav">
                 <Cartwidget />
                 <ul className="nav__ul">
-                    <Link to={`/category/:6154940c188b3540f08af666`}>Women</Link>
-                    <Link to={`/category/:618d6572b719ea641a15404b`}>Men</Link>
-                    <Link to={`/category/:615496897d02077de089f87a`}>Kids</Link>
+                    <Link to={`/category/mujer`}>Women</Link>
+                    <Link to={`/category/hombre`}>Men</Link>
+                    <Link to={`/category/niño`}>Kids</Link>
                     
                 </ul>
                 <div className="nav__icons">

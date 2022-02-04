@@ -6,9 +6,6 @@ import "./cart.css"
 export const Cart = () => {
 
     const {Cart,removeItem,total} = useContext(cartContext)
-    console.log(total)
-    console.log(Cart)
-    console.log(Cart.length)
     return (
         <div className='cart'>
             <h1>Shopping Cart</h1>
