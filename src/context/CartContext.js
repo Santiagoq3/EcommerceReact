@@ -36,7 +36,6 @@ const CartContext = ({children}) => {
     },[Cart])
     
     
-    console.log(Cart)
 
     const removeItem = (id)=>{
 
@@ -60,7 +59,7 @@ const CartContext = ({children}) => {
 
 
     const isInCart = (item)=>{
-        return Cart.some(producto => producto.item._id === item._id )
+        return Cart.some(producto => producto.item.id === item.id )
     }
 
   return <CartProvider value={{Cart,addItem,removeItem,clear,total,yaexiste}}>

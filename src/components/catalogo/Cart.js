@@ -6,6 +6,7 @@ import "./cart.css"
 export const Cart = () => {
 
     const {Cart,removeItem,total} = useContext(cartContext)
+    console.log(Cart)
     return (
         <div className='cart'>
             <h1>Shopping Cart</h1>
@@ -38,7 +39,9 @@ export const Cart = () => {
                             <p>$ {total}</p>
                         </div>
                         <button className='cart_btn-comprar'>
-                            Terminar compra
+                            <Link to="/checkout">
+                                Generar orden
+                            </Link>
                         </button>
                         <Link to="/" className='cart_continuar-comprando' >
                             <p>o Continuar Comprando</p> 
