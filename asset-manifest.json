@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/EcommerceReact/static/css/main.202ada5d.chunk.css",
-    "main.js": "/EcommerceReact/static/js/main.237ab77f.chunk.js",
-    "main.js.map": "/EcommerceReact/static/js/main.237ab77f.chunk.js.map",
+    "main.css": "/EcommerceReact/static/css/main.e10c849f.chunk.css",
+    "main.js": "/EcommerceReact/static/js/main.062e5e5d.chunk.js",
+    "main.js.map": "/EcommerceReact/static/js/main.062e5e5d.chunk.js.map",
     "runtime-main.js": "/EcommerceReact/static/js/runtime-main.01688bbe.js",
     "runtime-main.js.map": "/EcommerceReact/static/js/runtime-main.01688bbe.js.map",
-    "static/js/2.474e98ac.chunk.js": "/EcommerceReact/static/js/2.474e98ac.chunk.js",
-    "static/js/2.474e98ac.chunk.js.map": "/EcommerceReact/static/js/2.474e98ac.chunk.js.map",
+    "static/js/2.065a595b.chunk.js": "/EcommerceReact/static/js/2.065a595b.chunk.js",
+    "static/js/2.065a595b.chunk.js.map": "/EcommerceReact/static/js/2.065a595b.chunk.js.map",
     "static/js/3.a39bc68a.chunk.js": "/EcommerceReact/static/js/3.a39bc68a.chunk.js",
     "static/js/3.a39bc68a.chunk.js.map": "/EcommerceReact/static/js/3.a39bc68a.chunk.js.map",
     "index.html": "/EcommerceReact/index.html",
-    "static/css/main.202ada5d.chunk.css.map": "/EcommerceReact/static/css/main.202ada5d.chunk.css.map",
-    "static/js/2.474e98ac.chunk.js.LICENSE.txt": "/EcommerceReact/static/js/2.474e98ac.chunk.js.LICENSE.txt",
-    "static/media/image-product-1.520cc50b.jpg": "/EcommerceReact/static/media/image-product-1.520cc50b.jpg"
+    "static/css/main.e10c849f.chunk.css.map": "/EcommerceReact/static/css/main.e10c849f.chunk.css.map",
+    "static/js/2.065a595b.chunk.js.LICENSE.txt": "/EcommerceReact/static/js/2.065a595b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.01688bbe.js",
-    "static/js/2.474e98ac.chunk.js",
-    "static/css/main.202ada5d.chunk.css",
-    "static/js/main.237ab77f.chunk.js"
+    "static/js/2.065a595b.chunk.js",
+    "static/css/main.e10c849f.chunk.css",
+    "static/js/main.062e5e5d.chunk.js"
   ]
 }
