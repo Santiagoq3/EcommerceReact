@@ -1,7 +1,9 @@
 .header{
     padding: 0.5em;
-    border: 1px solid gray;
     background-color: #fff;
+    color: #4b5563;
+    
+
 }
 
 .nav{
@@ -31,8 +33,13 @@
     display: flex;
     gap: 1em;
     margin-right: 0.4em;
+    align-items: center;
 }
 
 .fa-search,.fa-shopping-cart{
     cursor: pointer;
+}
+
+.header-cart-length{
+    margin-left: 5px;
 }

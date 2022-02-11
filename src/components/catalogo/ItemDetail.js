@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import "./itemdetail.css"
-import picture from "./image-product-1.jpg"
 import { Contador } from '../Contador'
 import { cartContext } from '../../context/CartContext'
 export const ItemDetail = ({Productos}) => {

@@ -13,7 +13,7 @@ export const AppRouter = () => {
            <Navbar />
             <Routes>
                 <Route exact path="/" element={<ItemListContainer greeting={"Este es mi catalog, Bienvenidos!!"} />   } />
-                <Route exact path="/EcommerceReact" element={<ItemListContainer greeting={"Este es mi catalog, Bienvenidos!!"} />   } />
+                <Route exact path="/EcommerceReact" element={<ItemListContainer greeting={"Este es mi catalogo, Bienvenidos!!"} />   } />
                 <Route exact path="/category/:id" element={<ItemListContainer greeting={"Este es mi categoria, Bienvenidos!!"} />  } />
                 <Route exact path="/item/:id" element={<ItemDetailContainer />   } />
                 <Route exact path="/cart" element={<Cart />   } />

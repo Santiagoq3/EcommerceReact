@@ -11,17 +11,21 @@ const Navbar = () => {
             <nav className="nav">
                 <Cartwidget />
                 <ul className="nav__ul">
-                    <Link to={`/category/mujer`}>Women</Link>
-                    <Link to={`/category/hombre`}>Men</Link>
-                    <Link to={`/category/niño`}>Kids</Link>
-                    
+                    <Link to={`/category/mujer`} style={{color: "#4b5563"}}>
+                        Mujeres
+                    </Link>
+                    <Link to={`/category/hombre`} style={{color: "#4b5563"}}>
+                        Hombres
+                    </Link>
+                    <Link to={`/category/niño`} style={{color: "#4b5563"}}>
+                        Niños
+                    </Link>
                 </ul>
                 <div className="nav__icons">
-                    <i className="fas fa-search"></i>
-                    <Link to="/cart">
+                    <Link to="/cart" style={{color: "#4b5563"}}>
 
                         <i className="fas fa-shopping-cart">
-                            <span>({Cart.length})</span>
+                            <span className='header-cart-length'>{Cart.length}</span>
                         </i>
 
                     </Link>

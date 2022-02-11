@@ -32,7 +32,7 @@ export const Contador = ({onAdd}) => {
                 <i onClick={handleAdd} className="fas fa-plus"></i>
             </div> 
             
-            <button onClick={()=>onAdd(Contador)}>
+            <button className='contador__button' onClick={()=>onAdd(Contador)}>
                     Agregar al carrito
             </button>
             
