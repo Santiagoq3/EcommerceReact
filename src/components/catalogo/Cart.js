@@ -38,13 +38,13 @@ export const Cart = () => {
                             <p>Total</p>
                             <p>$ {total}</p>
                         </div>
-                        <button className='cart_btn-comprar'>
-                            <Link to="/checkout">
-                                Generar orden
-                            </Link>
-                        </button>
+                        
+                        <Link to="/checkout">
+                                <p className='cart_btn-comprar'>Generar orden</p>
+                        </Link>
+                        
                         <Link to="/" className='cart_continuar-comprando' >
-                            <p>o Continuar Comprando</p> 
+                            <p style={{color: "black"}}>o Continuar Comprando</p> 
                         </Link>
                     </div>
                 </ul>

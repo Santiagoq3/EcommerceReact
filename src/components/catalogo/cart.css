@@ -66,6 +66,10 @@ h1{
     width: 100%;
     margin-top: 1em;
     padding: 0.5em;
+    text-align: center;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 8px;
 }
 
 .cart_continuar-comprando p{

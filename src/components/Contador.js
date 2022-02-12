@@ -5,9 +5,6 @@ import "./contador.css"
 export const Contador = ({onAdd}) => {
     const [Contador, setContador] = useState(1)
 
-
-
-    
     const handleAdd = ()=>{
 
         setContador(Contador + 1)
